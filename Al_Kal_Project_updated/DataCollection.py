@@ -62,8 +62,8 @@ class CleanData:
                 # DELETE UNWANTED COLUMN FROM THE RECORD
                 cells = np.delete(arr, 6, axis=1)
                 # TURN THR NON 2018 COLUMNS TO ZEROS AS INDICATED IN THE INSTRUCTIONS
-                cells[:, 3] = 0
-                cells[:, 4] = 0
+                cells[:, 3] = 'N/A'
+                cells[:, 4] = 'N/A'
                 sort = self.sortData(cells)
                 # REMOVE UNNECESSARY NUMPY ARRAY ENTRIES
 
@@ -77,6 +77,7 @@ class CleanData:
                     csvwriter.writerow(headers)
                     csvwriter.writerows(sortarray)
                     print(fileLocation, 'SUCCESSFUL')
+                # OPENS THE FILE AUTOMATICALLY
                 os.startfile(fileLocation)
                 return sortarray
         except Exception as e:
