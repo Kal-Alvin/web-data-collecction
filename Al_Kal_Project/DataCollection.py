@@ -77,6 +77,7 @@ class CleanData:
                     csvwriter.writerow(headers)
                     csvwriter.writerows(sortarray)
                     print(fileLocation, 'SUCCESSFUL')
+                os.startfile(fileLocation)
                 return sortarray
         except Exception as e:
             print(e.args)
@@ -107,3 +108,4 @@ class CleanData:
 site = 'https://en.wikipedia.org/wiki/Road_safety_in_Europe#cite_note-25'
 data = CleanData(site)
 data.drowChart()
+
