@@ -26,3 +26,5 @@ Function:
         internet connection to spoof the data from the wesite.
         drows the bar chart by using countries from the spoof recors and the Road deaths as indicated 
         }
+        
+    THE UPDATED VERSION OPENS THE CSV FILE AUTOMATICALLY
