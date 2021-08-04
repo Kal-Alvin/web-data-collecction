@@ -14,7 +14,9 @@ Function:
         checks data coming from "webdata" creates csv file, sort it then does the necessary
         modifications to the data then save it to .csv file.
         the paces you see Zero as indicated in the instruction on 2018. Any non 2018 data is replaced 
-        with 0. I could have used "N/A" Though and i hope the zero is ok with you.
+        with 0. I could have used "N/A" Though. In that case you use 
+        cells[:, 3] = 'N/A'
+        cells[:, 4] = 'N/A' instead 
    sortData{ 
         does the sorting of the data 
         } 
