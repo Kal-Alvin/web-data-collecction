@@ -3,13 +3,16 @@ requests, texttable(working but jus for test), numpy, metplotlib, and operator
 
 A constructor used for the site url 
 Function: 
+
   wedata{ 
         gets data from the website and spoof the needed 
         parts which is the table and returns the rows, columns, and header 
         } 
+        
   displayDataInTable{ 
         which uses the library "texttable" not part of the instruction but good to try for test 
         }
+        
   displayDataInCSV{ 
         checks data coming from "webdata" creates csv file, sort it then does the necessary
         modifications to the data then save it to .csv file.
@@ -17,9 +20,12 @@ Function:
         with 0. I could have used "N/A" Though. In that case you use 
         cells[:, 3] = 'N/A'
         cells[:, 4] = 'N/A' instead 
+        }
+        
    sortData{ 
         does the sorting of the data 
         } 
+        
   drowChart{ 
         All the used libraties are in the venv, you shouldn't have any issue running straight by pointing your 
         python interpreter to it.
